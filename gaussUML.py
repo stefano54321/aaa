@@ -7,7 +7,7 @@ def swap(mat, i, j):
 def find_pivot(mat, start, col):
     m = len(mat)
     for i in range(start, m):
-        if mat[i][col] != 0:
+        if col < len(mat[0]) and mat[i][col] != 0:
             return i
     return -1
 
