@@ -20,7 +20,6 @@ def eliminazione(mat):
         while  p==-1 and col<len(mat):
             col += 1
             p = find_pivot(mat, riga_pivot, col)
-        #    print(p)
         if p != -1:
             swap(mat, riga_pivot, p)
             #divide
@@ -35,10 +34,13 @@ def eliminazione(mat):
 if __name__ == '__main__':
     a = [[0,1,3],[3,5,6],[7,8,9]]
     b = [[10, 0, 7, 9], [12,23,45, 34], [60, 55, 7, 5], [7,3,65,7]]
-    c = [[1,2,3],[1,2,3],[4,5,6]]
+    c = [[1,2,3,4],[1,2,3,4],[4,5,6,10],[7,8,9,10]]
+    d = [[0,0,0],[0,0,1]]
     eliminazione(a)
     eliminazione(b)
     eliminazione(c)
+    eliminazione(d)
     print(np.matrix(a))
     print(np.matrix(b))
     print(np.matrix(c))
+    print(np.matrix(d))
