@@ -16,7 +16,7 @@ import numpy as np
 
 def swap(mat, i, j):
     mat[i], mat[j] = mat[j], mat[i]
-
+#eliminare swap
 
 def find_pivot(mat, start, col):
     m = len(mat)  # m è il numero delle righe
